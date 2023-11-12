@@ -1,0 +1,292 @@
+#imgs {
+  width: 100%;
+  height: 100%;
+}
+img {
+  display: block;
+  margin: auto auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.center-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.fireworks {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  right: 0;
+
+  z-index: 1;
+}
+.fireworks h1 {
+  font-size: 80px;
+  text-align: center;
+  color: #fff;
+  font-family: "cursive", sans-serif;
+  text-transform: uppercase; /* Uppercase text */
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+
+  /* Animated underline */
+  position: relative;
+}
+
+.fireworks h1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 60%;
+  height: 2px;
+  background-color: #ff7e5f; /* Color of the animated underline */
+  transform: translateX(-50%);
+  animation: underline 1s ease-in-out infinite alternate;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #6bf4e2, 0 0 10px #f46bdc, 0 0 15px #8bf46b,
+      0 0 20px #fef744, 0 0 25px #fea044, 0 0 30px #ff5d78, 0 0 35px #444;
+  }
+  to {
+    text-shadow: 0 0 8px #6bf4e2, 0 0 15px #6bf4e2, 0 0 22px #8bf46b,
+      0 0 30px #fef744, 0 0 40px #fea044, 0 0 50px #ff5d78, 0 0 60px #444;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: #000;
+}
+.lamp-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  z-index: 1;
+}
+.lamp {
+  position: relative;
+  width: 180px;
+  height: 80px;
+  background: #790a0a;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+.lamp:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  height: 40px;
+  background: #ffeb60;
+  border-radius: 50%;
+  border: 10px solid #9e0909;
+  box-sizing: border-box;
+}
+.lamp:after {
+  content: "";
+  position: absolute;
+  top: calc(-50% - 10px);
+  left: 50%;
+  width: 20px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #eff000, 0 0 0 10px rgba(255, 255, 255, 0.2);
+  filter: blur(5px);
+  animation: animate 2.5s linear infinite;
+  transform-origin: bottom;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-50%) scaleY(1);
+  }
+  50% {
+    transform: translateX(-50%) scaleY(1.3);
+  }
+  100% {
+    transform: translateX(-50%) scaleY(1);
+  }
+}
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://bestanimations.com/media/fireworks2/1589967346ba-pretty-delicate-firework-animated-gif-image.gif");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-position: fixed;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main-content {
+  text-align: center;
+  color: yellow;
+  font-size: large;
+  font-style: italic;
+}
+
+.lightsUpLeft {
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+
+.lightsUpRight {
+  float: right;
+  width: 150px;
+  height: 150px;
+}
+
+.diwali_diyasLeft {
+  margin-top: 30px;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.diwali_diyasRight {
+  margin-top: 30px;
+  width: 80px;
+  height: 80px;
+}
+
+h2 {
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 70px;
+  font-weight: 500;
+  animation: spanimation 1s ease-in-out infinite;
+  color: #fff;
+  text-align: center;
+}
+
+.diyas {
+  align-items: center;
+  width: 500px;
+  height: 280px;
+}
+
+.lightsDownLeft {
+  margin-top: 140px;
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+
+.lightsDownRight {
+  margin-top: 140px;
+  float: right;
+  width: 150px;
+  height: 150px;
+}
+
+@keyframes spanimation {
+  from {
+    text-shadow: 0px 0px 50px rgb(165, 62, 22), 0px 0px 20px rgb(165, 62, 22),
+      0px 0px 30px #ffd700, 0px 0px 40px rgb(212, 65, 6),
+      0px 0px 50px rgb(240, 75, 9);
+  }
+  to {
+    text-shadow: 0px 0px 40px rgb(16, 197, 46), 0px 0px 20px gold,
+      0px 0px 30px rgb(212, 65, 6), 0px 0px 60px rgb(221, 195, 25, 0.774),
+      0px 0px 50px rgb(16, 175, 43, 0.863);
+  }
+}
+.designed-by {
+  padding-right: 20px;
+  float: right;
+  margin-top: 0;
+  color: #fff;
+  text-align: center;
+}
+a {
+  color: #6bf4e2;
+}
+
+/* Mobile view styles */
+@media only screen and (max-width: 600px) {
+  .fireworks h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 18px;
+    padding: 0.5px;
+  }
+  .fireworks h1:after {
+    height: 1px;
+  }
+  img {
+    display: block;
+    margin: auto auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  .lamp {
+    position: relative;
+    width: 70px;
+    height: 32px;
+    background: #790a0a;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+  }
+  .lamp::after {
+    content: "";
+    position: absolute;
+    top: calc(-50% - 10px);
+    left: 50%;
+    width: 15px;
+    height: 22px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #eff000, 0 0 0 10px rgba(255, 255, 255, 0.2);
+    filter: blur(5px);
+    animation: animate 2.5s linear infinite;
+    transform-origin: bottom;
+  }
+  .designed-by {
+    padding-right: 0px;
+    margin-top: 5px;
+    color: #fff;
+    margin-top: 20px;
+    float: none;
+    font-size: 12px;
+  }
+}

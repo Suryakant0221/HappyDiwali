@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.fireworks.js"></script>
+    <title>Diwali - The Festival of Lights</title>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2021/03/15/21/54/lamp-6098162__340.png" />
+</head>
+
+<body>
+    <div id="imgs">
+        <div class="fireworks">
+            <img src="./picmix.com_1861380.gif" alt="Diwali GIF">
+            <div class="center-div">
+                <div class="lamp-outer">
+                    <div class="lamp"></div>
+                </div>
+                <div class="heading">
+                    <h1>&nbsp; Happy Diwali &nbsp;</h1>
+                </div>
+                <div class="lamp-outer">
+                    <div class="lamp"></div>
+                </div>
+            </div>
+            <div class="content">
+                <h2 class="center-div">
+                    May, thousand of lamps light up your life with endless happiness and joy.<br />Wishing you a
+                    prosperous and safe Diwali.
+                </h2>
+                <div class="designed-by">
+                    <p>Designed and Developed by <br><span><a href="https://suryakant0221.github.io/" target="_blank">suryakant kumar</a></span></p>
+                </div>
+            </div>
+            <!-- Add the audio element with autoplay -->
+            <audio autoplay onended="restartAudio()">
+                <source src="./firework-show-short-64657.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+              </audio>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    function restartAudio() {
+        const audio = document.querySelector('audio');
+        audio.currentTime = 0;
+        audio.play();
+      }
+    $(document).ready(function () {
+        setTimeout(function () {
+            $('#imgs').fireworks();
+            document.querySelector('audio').addEventListener('ended', restartAudio);
+        });
+    });
+</script>
+
+</html>
